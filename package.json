@@ -1,12 +1,12 @@
 {
-    "name": "{projectName}",
+    "name": "{{projectName}}",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "PORT={port} NODE_ENV=development supervisor index.js",
-        "test": "PORT={port} NODE_ENV=test supervisor index.js",
-        "prod": "PORT={port} NODE_ENV=production supervisor index.js"
+        "dev": "PORT={{port}} NODE_ENV=development supervisor index.js",
+        "test": "PORT={{port}} NODE_ENV=test supervisor index.js",
+        "prod": "PORT={{port}} NODE_ENV=production supervisor index.js"
     },
     "author": "",
     "license": "ISC",
@@ -23,7 +23,5 @@
         "koa2-cors": "^2.0.5",
         "log4js": "^2.4.1",
         "mysql": "^2.15.0"
-    },
-    "devDependencies": {
     }
 }
