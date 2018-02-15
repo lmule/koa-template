@@ -1,5 +1,5 @@
 {
-    "name": "{name}",
+    "name": "{projectName}",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -25,9 +25,5 @@
         "mysql": "^2.15.0"
     },
     "devDependencies": {
-        "chalk": "^2.3.0",
-        "co-fs": "^1.2.0",
-        "co-prompt": "^1.0.0",
-        "commander": "^2.14.1"
     }
 }
