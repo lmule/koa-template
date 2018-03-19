@@ -10,7 +10,7 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/index.js",
             "env": {
-                "PORT": "{{port}}",
+                "PORT": "<%- port%>",
                 "NODE_ENV": "development"
             }
         }

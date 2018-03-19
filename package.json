@@ -1,12 +1,12 @@
 {
-    "name": "{{projectName}}",
+    "name": "<%- projectName%>",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "PORT={{port}} NODE_ENV=development supervisor index.js",
-        "test": "PORT={{port}} NODE_ENV=test supervisor index.js",
-        "prod": "PORT={{port}} NODE_ENV=production supervisor index.js"
+        "dev": "PORT=<%- port%> NODE_ENV=development supervisor index.js",
+        "test": "PORT=<%- port%> NODE_ENV=test supervisor index.js",
+        "prod": "PORT=<%- port%> NODE_ENV=production supervisor index.js"
     },
     "author": "",
     "license": "ISC",
