@@ -1,7 +1,7 @@
 const logger = require('./log')
 
 module.exports = config => {
-    const env = process.env.NODE_ENV
+    const env = process.env.NODE_ENV || 'development'
     const _config = config[env]
     if (!_config) {
         logger.fatal(`config:%O中不包含env:%s的配置`, config, env)
