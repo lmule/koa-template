@@ -14,4 +14,3 @@ process.on('uncaughtException', err => {
 app.listen(port, () => {
     console.log('server start done')
 });
-<%- port%>
