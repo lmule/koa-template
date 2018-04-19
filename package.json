@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "NODE_ENV=development supervisor index.js",
         "test": "NODE_ENV=test supervisor index.js",
-        "prod": "NODE_ENV=production supervisor index.js"
+        "prod": "PORT=<%- port%> NODE_ENV=production supervisor index.js"
     },
     "author": "",
     "license": "ISC",
