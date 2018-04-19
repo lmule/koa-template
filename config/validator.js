@@ -3,7 +3,7 @@ module.exports = {
     key: '"{{!label}}" ',
     messages: {
         wrapArrays: true
-    }<%- port%>,
+    },
     any: {
         unknown: '不允许',
         invalid: '包含无效值',
