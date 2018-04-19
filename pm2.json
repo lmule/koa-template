@@ -12,15 +12,12 @@
     "error_file": "./log/pm2/err.log",
     "out_file": "./log/pm2/out.log",
     "env_dev": {
-        "NODE_ENV": "development",
-        "PORT": <%- port%>
+        "NODE_ENV": "development"
     },
     "env_test": {
-        "NODE_ENV": "test",
-        "PORT": <%- port%>
+        "NODE_ENV": "test"
     },
     "env": {
-        "NODE_ENV": "production",
-        "PORT": <%- port%>
+        "NODE_ENV": "production"
     }
 }
