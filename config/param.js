@@ -1,3 +1,3 @@
 module.exports = {
-    'defaultPort': 3000
+    'defaultPort': <%- port%>
 }
