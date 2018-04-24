@@ -4,7 +4,6 @@ const middleware = require('./app/middleware')
 middleware(app)
 
 const defaultPort = require('./config/param').defaultPort
-
 let port = process.env.PORT || defaultPort
 
 process.on('uncaughtException', err => {
@@ -12,5 +11,5 @@ process.on('uncaughtException', err => {
 })
 
 app.listen(port, () => {
-    console.log('server start done')
+    console.log('server start done on port: ' + port)
 });
