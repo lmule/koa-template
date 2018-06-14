@@ -11,5 +11,6 @@ const knex = require('knex')({
     }
 });
 const db = require('bookshelf')(knex)
+db.plugin(['visibility', 'bookshelf-camelcase']);
 
 module.exports = db
