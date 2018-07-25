@@ -9,7 +9,7 @@ module.exports = {
         log.info('GET请求第三方url:%s 共耗时%s毫秒', url, duration)
         return data
     },
-    post: async (url, param) => {
+    post: async (url, params) => {
         const start = (new Date()).getTime()
         const { data } = await axios.post(url, params)
         const duration = (new Date()).getTime() - start
