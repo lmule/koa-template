@@ -1,3 +1,5 @@
+const { isProd } = require('../app/helper/env')
+const logLevel = isProd ? 'warn' : 'trace'
 const levels = ['trace', 'debug', 'info', 'warn', 'error', 'fatal']
 let appenders = {
     console: { 
@@ -52,7 +54,7 @@ module.exports = {
         categories: {
             default: {
                 appenders: categoryAppenders,
-                level: 'trace'
+                level: logLevel
             }
         },
         pm2: true,
