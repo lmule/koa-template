@@ -1,7 +1,10 @@
 const conf = require('../../config/db')
+const env = require('../helper/env')
+const isDebug = !env.isProd
+
 const knex = require('knex')({
     client: 'mysql',
-    debug: true,
+    debug: isDebug,
     connection: {
         host     : conf.host,
         user     : conf.username,
