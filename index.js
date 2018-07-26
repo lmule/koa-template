@@ -1,5 +1,5 @@
 const Koa = require('koa')
-const env = require('./app/helper/env')
+const { current } = require('./app/helper/env')
 
 const app = new Koa()
 const middleware = require('./app/middleware')
@@ -13,5 +13,5 @@ process.on('uncaughtException', err => {
 })
 
 app.listen(port, () => {
-    console.log(`服务器端正常启动，端口号: ${port}，当前环境：${env.current}`)
+    console.log(`服务器端正常启动，端口号: ${port}，当前环境：${current}`)
 });

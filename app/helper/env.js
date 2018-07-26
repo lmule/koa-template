@@ -1,4 +1,7 @@
+const current = process.env.NODE_ENV || 'development'
+const isProd = current === 'production'
+
 module.exports = {
-    current: process.env.NODE_ENV || 'development',
-    isProd: this.current === 'production'
+    current,
+    isProd
 }
