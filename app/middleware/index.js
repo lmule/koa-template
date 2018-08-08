@@ -1,4 +1,4 @@
-const middleWare = ['favicon', 'log', 'error', 'db', 'bodyParser', 'cors', 'json', 'response', 'router']
+const middleWare = ['favicon', 'cors', 'json', 'log', 'error', 'db', 'bodyParser', 'response', 'router']
 
 // 不循环获取middleware下面的文件然后require，是因为是考虑中间件的加载顺序
 module.exports = app => {
